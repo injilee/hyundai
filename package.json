@@ -1,0 +1,16 @@
+{
+  "name": "hyundai",
+  "description": "더현대백화점 클론 사이트",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "node-sass": "node-sass",
+    "sass": "node-sass -wr --source-map true styles/main.scss style.css"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
