@@ -16,6 +16,20 @@ body {
   font-family: $font-main, 'Noto Sans', Arial, dotum, 'sans-serif';
 }
 
+div,
+p,
+span,
+dt,
+dd,
+li,
+label {
+  color: $black;
+  font-size: $font14;
+  font-weight: $font-w4;
+  line-height: $line-height-14;
+  letter-spacing: $letter-spacing-14;
+}
+
 h1 {
   margin: 0;
 }
