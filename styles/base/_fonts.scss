@@ -1,0 +1,26 @@
+@font-face {
+  font-family: $font-main;
+  font-style: 'normal';
+  font-weight: 400;
+  src: url('/assets/font/Happiness-Sans-Regular.woff2') format('woff2'),
+    url('/assets/font/Happiness-Sans-Regular.woff') format('woff'),
+    url('/assets/font/Happiness-Sans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: $font-main;
+  font-style: 'bold';
+  font-weight: 700;
+  src: url('/assets/font/Happiness-Sans-Bold.woff2') format('woff2'),
+    url('/assets/font/Happiness-Sans-Bold.woff') format('woff'),
+    url('/assets/font/Happiness-Sans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: $font-tit;
+  font-style: 'bold';
+  font-weight: 900;
+  src: url('/assets/font/Happiness-Sans-Title.woff2') format('woff2'),
+    url('/assets/font/Happiness-Sans-Title.woff') format('woff'),
+    url('/assets/font/Happiness-Sans-Title.ttf') format('truetype');
+}
