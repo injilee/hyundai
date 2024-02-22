@@ -1,0 +1,149 @@
+// gnb title 공통 스타일
+.gnb-title {
+  @include hidden;
+}
+
+.snb {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: $white;
+  margin: 0 auto;
+  z-index: $gnb-level;
+
+  .header-wrap {
+    @include flexbox(between, center);
+    width: calc(100% - 480px);
+    margin: 0 auto;
+    min-width: 1440px;
+
+    .logo-container {
+      display: inline-flex;
+      align-items: center;
+    }
+  }
+
+  .logo {
+    position: relative;
+    margin-top: 5px;
+
+    &-title {
+      @include background-img;
+      display: inline-block;
+      width: 139px;
+      height: 22px;
+      background-image: url('/assets/images/pc/logo.png');
+    }
+
+    &-txt {
+      @include hidden;
+    }
+  }
+
+  .toggle-gate {
+    @include background-img;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    margin-top: 2px;
+    margin-left: 8px;
+    background-image: url('/assets/images/icons/btn_gnb_20.png');
+
+    span {
+      @include hidden;
+    }
+  }
+
+  .gnb {
+    margin-left: 16px;
+
+    &-content {
+      display: flex;
+
+      .gnb-list {
+        display: inline-block;
+        padding: 0 16px;
+
+        a {
+          position: relative;
+
+          &:hover::after {
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            content: '';
+            width: 100%;
+            height: 2px;
+            background-color: $black;
+          }
+
+          &:hover {
+            font-weight: $font-w7;
+          }
+        }
+      }
+    }
+  }
+
+  .gnb-right {
+    display: inline-flex;
+    align-items: center;
+
+    .member-service-list {
+      @include text-style-12;
+      display: inline-block;
+      padding: 8px;
+      color: $gray02;
+    }
+
+    .lang-choice {
+      position: relative;
+      padding-right: 20px;
+
+      & > a {
+        @include background-img;
+        display: block;
+        width: 40px;
+        height: 24px;
+        background-image: url('/assets/images/icons/btn_lang.png');
+      }
+
+      .lang-content {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+
+    .brand-search {
+      & > a {
+        @include flexbox;
+        width: 190px;
+        height: 70px;
+        background-color: $black;
+
+        &:hover {
+          background-color: $green;
+        }
+      }
+
+      span {
+        font-weight: $font-w7;
+        color: $white;
+
+        &::after {
+          @include background-img;
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          vertical-align: top;
+          margin-left: 6px;
+          background-image: url('/assets/images/icons/ico_gnb_search_20.png');
+          content: '';
+        }
+      }
+    }
+  }
+}
