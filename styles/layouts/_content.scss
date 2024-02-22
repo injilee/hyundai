@@ -1,0 +1,542 @@
+// content 공통 스타일
+.cont-title {
+  @include text-style-28;
+  font-weight: $font-w7;
+}
+
+.main-container {
+  padding: 70px 0 160px;
+
+  & > h2 {
+    @include hidden;
+  }
+
+  .conts {
+    &-intro {
+      background-color: $black;
+    }
+
+    .cont-sec {
+      width: 1110px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 80px;
+    }
+  }
+
+  // section intro
+  .intro {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    height: 800px;
+    overflow: hidden;
+    margin: 0 auto;
+
+    &-visual {
+      position: absolute;
+      width: 100%;
+      max-width: 1920px;
+      height: 800px;
+
+      .img-wrap {
+        @include pos-center(absolute);
+        width: 1300px;
+        height: 550px;
+      }
+
+      .txt span {
+        position: absolute;
+        left: 50%;
+        display: inline-block;
+        line-height: 144px;
+        letter-spacing: -0.25px;
+        font-size: 144px;
+        font-weight: $font-w9;
+        color: $white;
+
+        &:nth-child(1) {
+          top: 535px;
+          margin-left: -710px;
+        }
+
+        &:nth-child(2) {
+          top: 655px;
+          margin-left: 220px;
+          color: rgba(0, 0, 0, 0);
+          -webkit-text-stroke: 2px #fff;
+        }
+      }
+    }
+  }
+
+  // section 1
+  .overview {
+    width: 1110px;
+    margin: 0 auto;
+    padding: 48px 0 120px;
+
+    &-top {
+      @include flexbox(between, center);
+
+      .overview-control {
+        & > a {
+          position: relative;
+          display: block;
+          @include text-style-32;
+          font-family: $font-tit;
+          font-weight: $font-w9;
+          color: $white;
+          padding-right: 32px;
+
+          &::after {
+            position: absolute;
+            top: 50%;
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            content: '';
+            background-image: url('/assets/images/icons/ico_arrow_down_28_white.png');
+            @include background-img;
+            transform: translateY(-50%);
+          }
+        }
+      }
+
+      .overview-address {
+        .address {
+          @include hidden;
+        }
+
+        & > a {
+          display: inline-block;
+          position: relative;
+          padding-left: 28px;
+
+          &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            content: '';
+            background-image: url('/assets/images/icons/ico_location_24_white.png');
+            @include background-img;
+          }
+
+          &:hover span {
+            text-decoration: underline;
+          }
+
+          & > span {
+            @include text-style-16;
+            color: $white;
+          }
+        }
+      }
+    }
+
+    &-box {
+      display: flex;
+      min-height: 300px;
+      margin-top: 20px;
+
+      .information {
+        display: flex;
+        flex-direction: column;
+        width: 805px;
+        padding: 32px 40px;
+        background-color: $white;
+
+        .info-title {
+          @include text-style-18;
+          font-weight: $font-w4;
+          margin-bottom: 24px;
+
+          & > em {
+            @include text-style-28;
+            font-style: normal;
+            font-weight: $font-w7;
+          }
+        }
+
+        .info-desc {
+          display: flex;
+          align-items: flex-start;
+          margin-top: auto;
+
+          .left {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1 0 0;
+
+            & > dt {
+              width: 80px;
+              @include text-style-16;
+              font-weight: $font-w4;
+            }
+
+            & > dd {
+              width: 180px;
+              @include text-style-16;
+              font-weight: $font-w7;
+              margin-left: 72px;
+              text-align: right;
+            }
+          }
+
+          .right {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1 0 0;
+            margin-left: 60px;
+
+            & > dt {
+              width: 80px;
+              @include text-style-16;
+              font-weight: $font-w4;
+            }
+
+            & > dd {
+              width: 180px;
+              @include text-style-16;
+              font-weight: $font-w7;
+              margin-left: 72px;
+              text-align: right;
+            }
+          }
+        }
+      }
+
+      .calendar {
+        width: 293px;
+        margin-left: auto;
+        background-color: $white;
+
+        .viwe-area {
+          &-container {
+            width: 100%;
+
+            .select-day {
+              padding: 24px 24px 10px;
+
+              .calendar-header {
+                position: relative;
+                padding: 0 20px;
+                text-align: center;
+
+                .calendar-btn-prev {
+                  @include background-img;
+                  position: absolute;
+                  top: 50%;
+                  left: 0;
+                  width: 20px;
+                  height: 20px;
+                  background-image: url('/assets/images/icons/ico_arrow_right_20_black.png');
+                  margin-top: -10px;
+                  transform: rotate(180deg);
+                }
+
+                .calendar-month span {
+                  vertical-align: top;
+                  @include text-style-18;
+                  font-weight: $font-w7;
+                  color: $black;
+                }
+
+                .calendar-btn-next {
+                  @include background-img;
+                  position: absolute;
+                  top: 50%;
+                  right: 0;
+                  width: 20px;
+                  height: 20px;
+                  background-image: url('/assets/images/icons/ico_arrow_right_20_black.png');
+                  margin-top: -10px;
+                }
+              }
+
+              .calendar-date {
+                margin: 10px -6px 0;
+
+                .calendar-table {
+                  width: 100%;
+                  table-layout: fixed;
+                  border-collapse: collapse;
+
+                  .calendar-dayname {
+                    padding: 5px 6px;
+                    @include text-style-12;
+                    font-weight: $font-w7;
+                    line-height: 1.4;
+                    color: $gray02;
+                    text-align: center;
+                  }
+
+                  .calendar-date {
+                    padding: 5px 6px;
+                    @include text-style-12;
+                    font-weight: $font-w4;
+                    line-height: 1.4;
+                    color: $black;
+                    text-align: center;
+
+                    & > span {
+                      @include inline-flexbox;
+                      width: 24px;
+                      height: 24px;
+                    }
+
+                    &.extend {
+                      span {
+                        background-color: $pink;
+                      }
+                    }
+
+                    &.holiday {
+                      span {
+                        background-color: $black;
+                        color: $white;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .legend-area {
+          height: 17px;
+          padding: 0 24px 16px;
+          text-align: right;
+
+          & > img {
+            max-width: 108px;
+            vertical-align: top;
+          }
+        }
+      }
+    }
+  }
+
+  // section 2
+  .cont-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    &-list {
+      width: 25%;
+      border-bottom: 1px solid $gray04;
+
+      // top : 1 ~ 4번째 적용
+      &:nth-child(-n + 4) {
+        border-top: 1px solid $gray04;
+      }
+
+      // left : 1, 5, 9번째 제외
+      &:not(:nth-child(4n + 1)) {
+        border-left: 1px solid $gray04;
+      }
+
+      // left : 2 ~ 4, 6 ~ 8, 10번째 적용
+      &:nth-child(4n + 1) {
+        border-left: 1px solid $gray04;
+      }
+
+      // right : 4, 8번째 적용
+      &:nth-child(4n) {
+        border-right: 1px solid $gray04;
+      }
+
+      // right : 마지막 적용
+      &:last-child {
+        border-right: 1px solid $gray04;
+      }
+
+      & > a {
+        display: block;
+        padding: 20px 10px;
+        text-align: center;
+        font-weight: $font-w4;
+
+        & > span {
+          @include text-style-16;
+        }
+      }
+    }
+  }
+
+  // section 3
+  .event-banner-list {
+    position: relative;
+    margin-top: 24px;
+
+    .shop-content {
+      display: flex;
+
+      .shop-list {
+        width: 268px;
+
+        &:nth-child(n + 2) {
+          margin-left: 13px;
+        }
+
+        & > a {
+          display: block;
+
+          .shop-list-img {
+            display: block;
+            overflow: hidden;
+            width: 268px;
+            height: 268px;
+
+            & > img {
+              width: 100%;
+            }
+          }
+
+          .info {
+            display: block;
+            padding-top: 24px;
+
+            &-title {
+              @include text-style-18;
+              height: 54px;
+              font-weight: $font-w7;
+              text-overflow: ellipsis;
+              overflow: hidden;
+            }
+
+            &-txt {
+              display: block;
+              @include text-style-16;
+              font-weight: $font-w4;
+              color: $gray02;
+              margin-top: 8px;
+            }
+          }
+        }
+      }
+    }
+
+    .more {
+      position: absolute;
+      top: -56px;
+      right: 0;
+      width: 24px;
+      height: 24px;
+
+      &-btn {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+        background-color: $black;
+
+        &::after {
+          @include background-img;
+          @include pos-center(absolute);
+          background-image: url('/assets/images/icons/ico_arrow_right_20_white.png');
+          content: '';
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+        }
+
+        & > span {
+          @include hidden;
+        }
+      }
+    }
+  }
+
+  // section 4
+  .food-banner-list {
+    margin-top: 24px;
+
+    .food-content {
+      display: flex;
+
+      .food-list img {
+        max-width: 100%;
+        vertical-align: top;
+      }
+    }
+  }
+
+  // section 5
+  .slide-carousel-wrap {
+    position: relative;
+    @include flexbox(between, center);
+    width: 100%;
+    height: auto;
+    margin: 28px auto 0;
+
+    .indi-progress {
+      position: absolute;
+      left: 48px;
+      bottom: 33px;
+      width: 585px;
+      height: 2px;
+      z-index: $progress-level;
+      background-color: rgba(255, 255, 255, 0.2);
+
+      .track {
+        .carousel-progress {
+          display: block;
+          width: 50%;
+          height: 2px;
+          background-color: rgb(255, 255, 255);
+        }
+      }
+    }
+
+    .slide-content {
+      overflow: hidden;
+
+      .slide-track {
+        width: 4440px;
+        display: block;
+        content: '';
+        clear: both;
+        overflow: hidden;
+
+        .slide-conts {
+          float: left;
+          width: 1110px;
+
+          & > a {
+            & > img {
+              width: 100%;
+              vertical-align: top;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // section 6
+  .add-banner-content {
+    display: flex;
+
+    .add-banner-list {
+      width: 549px;
+
+      &:last-child {
+        margin-left: 12px;
+      }
+
+      & > a {
+        & > img {
+          width: 100%;
+          vertical-align: top;
+        }
+      }
+    }
+  }
+
+  // .main-container 끝
+}
