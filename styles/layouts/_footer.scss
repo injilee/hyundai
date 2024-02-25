@@ -73,23 +73,25 @@
             @include text-style-16;
             color: $gray04;
             background-color: $black;
-            border: 1px solid $gray01;
-          }
+            border: 1px solid transparent;
 
-          &::after {
-            @include background-img;
-            position: absolute;
-            top: 50%;
-            right: 16px;
-            width: 24px;
-            height: 24px;
-            content: '';
-            margin-top: -12px;
-            background-image: url('/assets/images/icons/ico_arrow_down_28_white.png');
+            &::after {
+              @include background-img;
+              position: absolute;
+              top: 50%;
+              right: 16px;
+              width: 24px;
+              height: 24px;
+              content: '';
+              margin-top: -12px;
+              background-image: url('/assets/images/icons/ico_arrow_down_28_white.png');
+              transform: rotate(360deg);
+            }
           }
         }
 
         &-content {
+          display: none;
           position: absolute;
           overflow-y: auto;
           width: 100%;
@@ -101,7 +103,6 @@
           z-index: $family-site-level;
 
           .family-site-list {
-            display: none;
             margin: 0;
 
             & > a {
@@ -119,6 +120,20 @@
             }
           }
         }
+      }
+
+      .family-site.on .family-site-btn {
+        &::after {
+          transform: rotate(180deg);
+        }
+      }
+
+      .family-site.on .family-site-content {
+        display: block;
+      }
+
+      .family-site.on .family-site-btn {
+        border: 1px solid $gray01;
       }
 
       .ref-link {
