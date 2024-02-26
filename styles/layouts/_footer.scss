@@ -1,3 +1,24 @@
+.floating {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: $aside-top-btn;
+
+  .top-wrap {
+    .aside-top-btn {
+      @include background-img;
+      display: inline-block;
+      width: 72px;
+      height: 72px;
+      background-image: url('/assets/images/icons/ico_top_72_black.png');
+
+      & > span {
+        @include hidden;
+      }
+    }
+  }
+}
+
 .footer {
   height: 538px;
   background-color: $black;
