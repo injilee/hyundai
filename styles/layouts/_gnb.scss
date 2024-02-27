@@ -130,12 +130,16 @@
 
     &-content {
       display: flex;
+      align-items: center;
+      height: 70px;
 
       .gnb-list {
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        height: 100%;
         padding: 0 16px;
 
-        a {
+        .gnb-list-title {
           position: relative;
 
           &:hover::after {
@@ -150,6 +154,94 @@
 
           &:hover {
             font-weight: $font-w7;
+          }
+        }
+
+        .gnb-list-title.on {
+          font-weight: $font-w7;
+
+          &::after {
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            content: '';
+            width: 100%;
+            height: 2px;
+            background-color: $black;
+          }
+        }
+
+        .sub {
+          position: absolute;
+          top: 70px;
+          left: 50%;
+          display: none;
+          min-width: 1440px;
+          width: calc(100% - 480px);
+          height: auto;
+          padding: 40px 0 64px;
+          margin-left: -720px;
+          background-color: $white;
+
+          .sub-title {
+            display: inline-block;
+            width: 220px;
+            margin-left: 32px;
+
+            & > p {
+              @include text-style-32;
+              font-weight: $font-w7;
+              color: $black;
+
+              & > span {
+                @include hidden;
+              }
+            }
+          }
+        }
+
+        .sub.on {
+          display: block;
+        }
+
+        .sub-menu-content {
+          display: inline-block;
+          margin-top: 9px;
+          vertical-align: top;
+
+          .sub-menu-item {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 32px;
+
+            .sub-name > span {
+              @include text-style-16;
+              font-weight: $font-w7;
+              color: $black;
+            }
+          }
+
+          .navigations > ul {
+            margin-top: 20px;
+
+            .nav-list:not(:last-child) {
+              margin-bottom: 12px;
+            }
+          }
+        }
+
+        .event-ban-sec {
+          position: absolute;
+          top: 40px;
+          right: 0;
+          display: inline-block;
+          width: 284px;
+          margin-left: 32px;
+
+          & > img {
+            width: 284px;
+            height: 284px;
+            vertical-align: top;
           }
         }
       }
