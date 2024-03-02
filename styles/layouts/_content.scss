@@ -183,6 +183,13 @@
               margin-left: 72px;
               text-align: right;
             }
+
+            & > dt:not(:first-child) {
+              margin-top: 8px;
+            }
+            & > dt:not(:first-child) + dd {
+              margin-top: 8px;
+            }
           }
 
           .right {
@@ -203,6 +210,13 @@
               font-weight: $font-w7;
               margin-left: 72px;
               text-align: right;
+            }
+
+            & > dt:not(:first-child) {
+              margin-top: 8px;
+            }
+            & > dt:not(:first-child) + dd {
+              margin-top: 8px;
             }
           }
         }
@@ -467,7 +481,7 @@
   }
 
   // section 5
-  .slide-carousel-wrap {
+  .slide-container {
     position: relative;
     @include flexbox(between, center);
     width: 100%;
@@ -489,29 +503,76 @@
           width: 50%;
           height: 2px;
           background-color: rgb(255, 255, 255);
+          transition: width 0.3s ease-in-out;
         }
       }
     }
 
-    .slide-content {
+    .slide-wrapper {
       overflow: hidden;
 
-      .slide-track {
+      .slide-items {
         width: 4440px;
         display: block;
         content: '';
         clear: both;
         overflow: hidden;
+        transform: translate3d(-1110px, 0, 0);
 
-        .slide-conts {
+        .slide-item {
           float: left;
           width: 1110px;
 
           & > a {
+            -webkit-user-drag: none;
             & > img {
               width: 100%;
               vertical-align: top;
+              -webkit-user-drag: none;
             }
+          }
+        }
+      }
+
+      .slide-controls {
+        position: absolute;
+        top: initial;
+        left: 0;
+        bottom: 20px;
+        max-width: 1600px;
+        width: 100%;
+        margin: 0 auto;
+        z-index: $slider-arrow-btn;
+
+        & > .slide-btn-prev {
+          @include background-img;
+          position: absolute;
+          left: initial;
+          right: 120px;
+          bottom: 0;
+          display: block;
+          width: 28px;
+          height: 28px;
+          background-image: url('/assets/images/icons/ico_arrow_right_28_white.png');
+          transform: rotate(180deg);
+
+          & > span {
+            @include hidden;
+          }
+        }
+
+        & > .slide-btn-next {
+          @include background-img;
+          position: absolute;
+          right: 80px;
+          bottom: 0;
+          display: block;
+          width: 28px;
+          height: 28px;
+          background-image: url('/assets/images/icons/ico_arrow_right_28_white.png');
+
+          & > span {
+            @include hidden;
           }
         }
       }
