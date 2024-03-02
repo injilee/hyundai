@@ -9,6 +9,7 @@
     <meta name="author" />
     <link rel="icon" href="/assets/images/ico_favicon.png" />
     <link rel="stylesheet" href="style.css" />
+    <script src="/lib/jquery-3.7.1.min.js"></script>
   </head>
   <body>
     <!-- header 시작 -->
@@ -25,38 +26,753 @@
             <button type="button" class="toggle-gate">
               <span>현대백화점/더현대닷컴 열기</span>
             </button>
+            <!-- brand gate -->
+            <div class="brand-gate">
+              <ul class="brand-gate-content">
+                <li class="brand-gate-list">
+                  <a href="https://www.ehyundai.com/newPortal/index.do">현대백화점</a>
+                </li>
+                <li class="brand-gate-list">
+                  <a href="https://www.thehyundai.com/Home.html">더현대닷컴</a>
+                </li>
+              </ul>
+            </div>
           </div>
-
-          <!-- brand gate -->
-          <!-- <ul>
-            <li>
-              <a href="#none">현대백화점</a>
-            </li>
-            <li>
-              <a href="#none">더현대닷컴</a>
-            </li>
-          </ul> -->
 
           <nav class="gnb">
             <h2 class="gnb-title">메뉴</h2>
             <ul class="gnb-content">
               <li class="gnb-list">
-                <a href="#"> 지점안내 </a>
+                <a href="#" class="gnb-list-title"> 지점안내 </a>
+                <div class="sub">
+                  <div class="sub-title">
+                    <p>
+                      지점안내
+                      <span>하위 메뉴</span>
+                    </p>
+                  </div>
+                  <ul class="sub-menu-content">
+                    <li class="sub-menu-item">
+                      <div class="sub-name">
+                        <span>더현대</span>
+                      </div>
+                      <div class="navigations">
+                        <ul>
+                          <li class="nav-list">
+                            <a href="#none">
+                            더현대 서울
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            더현대 대구
+                          </a>
+                        </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="sub-menu-item">
+                      <div class="sub-name">
+                        <span>현대백화점</span>
+                      </div>
+                      <div class="navigations">
+                        <ul>
+                          <li class="nav-list">
+                            <a href="#none">
+                            압구정본점
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            무역센터점
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            천호점
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            신촌점
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            미아점
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            목동점
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            중동점
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            킨텍스점
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            디큐브시티
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            판교점
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            부산점
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            울산점
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            울산동구점
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            충청점
+                          </a>
+                        </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="sub-menu-item">
+                      <div class="sub-name">
+                        <span>현대아울렛</span>
+                      </div>
+                      <div class="navigations">
+                        <ul>
+                          <li class="nav-list">
+                            <a href="#none">
+                            김포점
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            송도점
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            대전점
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            SPACE
+                          </
+                          a> 1</li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            동대문점
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            가산점
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            가든파이브점
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            대구점
+                          </a>
+                        </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                  
+                  <div class="event-ban-sec">
+                    <a href="https://www.ehyundai.com/newPortal/ST/TS0000001_L.do">
+                      <img src="/assets/images/pc/20230405100822557.jpg" alt="빠르게 확인하는 트렌드 뉴스 3분 쇼핑">
+                    </a>
+                  </div>
+                </div>
               </li>
               <li class="gnb-list">
-                <a href="#"> 서비스 · 이벤트 </a>
+                <a href="#" class="gnb-list-title"> 서비스 · 이벤트 </a>
+                <div class="sub">
+                 <div class="sub-title">
+                  <p>
+                    서비스 · 이벤트
+                    <span>하위 메뉴</span>
+                  </p>
+                 </div>
+                  <ul class="sub-menu-content">
+                    <li class="sub-menu-item">
+                      <div class="sub-name">
+                        <span>VIP 프로그램</span>
+                      </div>
+                      <div class="navigations">
+                        <ul>
+                          <li class="nav-list">
+                            <a href="#none">
+                            선정 기준
+                          </a>
+                          </li>
+                            <li class="nav-list">
+                              <a href="#none">
+                              VIP 혜택
+                            </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            마일리지 적립
+                          </a>
+                        </li>
+                        <li class="nav-list">
+                          <a href="#none">
+                          리워드
+                        </a>
+                      </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="sub-menu-item">
+                      <div class="sub-name">
+                        <span>고객서비스</span>
+                      </div>
+                      <div class="navigations">
+                        <ul>
+                          <li class="nav-list">
+                            <a href="#none">
+                            고객의 의견
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            자주 하는 질문
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            서비스 안내
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            주요 문의처
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            배송 조회
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            공지사항
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            행복 인사이트 위원회
+                          </a>
+                        </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="sub-menu-item">
+                      <div class="sub-name">
+                        <span>이벤트</span>
+                      </div>
+                      <div class="navigations">
+                        <ul>
+                          <li class="nav-list">
+                            <a href="#none">
+                            진행 이벤트
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            당첨자 발표
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            어린이그림그리기대회
+                          </a>
+                        </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="sub-menu-item">
+                      <div class="sub-name">
+                        <span>채널</span>
+                      </div>
+                      <div class="navigations">
+                        <ul>
+                          <li class="nav-list">
+                            <a href="#none">
+                            서체 다운로드
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            유튜브
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            인스타그램
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            블로그
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            포스트
+                          </a>
+                        </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="sub-menu-item">
+                      <div class="sub-name">
+                        <span>콘텐츠</span>
+                      </div>
+                      <div class="navigations">
+                        <ul>
+                          <li class="nav-list">
+                            <a href="#none">
+                            STYLE H 매거진
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            3분쇼핑
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            에디토리얼 디파트먼트
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            그로서리 가이드
+                          </a>
+                        </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                  
+                  <div class="event-ban-sec">
+                    <a href="https://www.ehyundai.com/newPortal/ST/TS0000001_L.do">
+                      <img src="/assets/images/pc/20230405101705553.jpg" alt="해피니스산스">
+                    </a>
+                  </div>
+                </div>
               </li>
               <li class="gnb-list">
-                <a href="#"> 브랜드 </a>
+                <a href="#" class="gnb-list-title"> 브랜드 </a>
+                <div class="sub">
+                  <div class="sub-title">
+                    <p>
+                      브랜드
+                      <span>하위 메뉴</span>
+                    </p>
+                  </div>
+                  <ul class="sub-menu-content">
+                    <li class="sub-menu-item">
+                      <div class="sub-name">
+                        <span>브랜드</span>
+                      </div>
+                      <div class="navigations">
+                        <ul>
+                          <li class="nav-list">
+                            <a href="#none">
+                            FOURM
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            톰그레이하운드
+                          </a>
+                        </li>
+                        <li class="nav-list">
+                          <a href="#none">
+                          PEER
+                        </a>
+                      </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="sub-menu-item">
+                      <div class="sub-name">
+                        <span>해외패션</span>
+                      </div>
+                      <div class="navigations">
+                        <ul>
+                          <li class="nav-list">
+                            <a href="#none">
+                            THE BASH
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            오프웍스
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            LABELS
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            슈페이스
+                          </a>
+                        </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            슈라이브러리
+                          </a>
+                        </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="sub-menu-item">
+                      <div class="sub-name">
+                        <span>라이프스타일</span>
+                      </div>
+                      <div class="navigations">
+                        <ul>
+                          <li class="nav-list">
+                            <a href="#none">
+                            Be CLEAN
+                          </a>
+                        </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="sub-menu-item">
+                      <div class="sub-name">
+                        <span>리빙</span>
+                      </div>
+                      <div class="navigations">
+                        <ul>
+                          <li class="nav-list">
+                            <a href="#none">
+                            HBYH
+                          </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                              위마켓
+                            </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            르쁠라 H
+                            </a>
+                          </li>
+                          </ul>
+                        </div>
+                      </li>
+                    <li class="sub-menu-item">
+                      <div class="sub-name">
+                        <span>현대식품관</span>
+                      </div>
+                      <div class="navigations">
+                        <ul>
+                          <li class="nav-list">
+                            <a href="#none">
+                            명인명촌
+                          </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                              와인웍스
+                          </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            원테이블
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                  
+                  <div class="event-ban-sec">
+                    <a href="https://www.ehyundai.com/newPortal/ST/TS0000001_L.do">
+                      <img src="/assets/images/pc/20221021102934483.jpg" alt="THE HYUNDAI.COM
+                      PREMIUM SHOWROOM">
+                    </a>
+                  </div>
+                </div>
               </li>
               <li class="gnb-list">
-                <a href="#"> 문화센터 · 전시 · 공연 </a>
+                <a href="#" class="gnb-list-title"> 문화센터 · 전시 · 공연 </a>
+                <div class="sub">
+                  <div class="sub-title">
+                    <p>
+                      문화센터 · 전시 · 공연
+                      <span>하위 메뉴</span>
+                    </p>
+                  </div>
+                  <ul class="sub-menu-content">
+                    <li class="sub-menu-item">
+                      <div class="sub-name">
+                        <span>CH 1985 · 문화센터</span>
+                      </div>
+                      <div class="navigations">
+                        <ul>
+                          <li class="nav-list">
+                            <a href="#none">
+                              CH 1985
+                            </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            문화센터
+                            </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                              나의 강의실
+                            </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            이용 안내
+                            </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                              공식 유튜브
+                            </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                              공식 인스타그램
+                            </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                              공식 블로그
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="sub-menu-item">
+                      <div class="sub-name">
+                        <span>전시 · 공연</span>
+                      </div>
+                      <div class="navigations">
+                        <ul>
+                          <li class="nav-list">
+                            <a href="#none">
+                            공간 소개
+                            </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            진행 중인 전시 · 공연
+                            </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            지난 전시 · 공연
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                  
+                  <div class="event-ban-sec">
+                    <a href="https://www.ehyundai.com/newPortal/ST/TS0000001_L.do">
+                      <img src="/assets/images/pc/afca13ad37904d00b71ce9d86a8244fd.png" alt="봄시즌 수강신청">
+                    </a>
+                  </div>
+                </div>
               </li>
               <li class="gnb-list">
-                <a href="#"> 카드 · 상품권 · 멤버쉽 </a>
+                <a href="#" class="gnb-list-title"> 카드 · 상품권 · 멤버쉽 </a>
+                <div class="sub">
+                  <div class="sub-title">
+                    <p>
+                      카드 · 상품권 · 멤버쉽
+                      <span>하위 메뉴</span>
+                    </p>
+                  </div>
+                  <ul class="sub-menu-content">
+                    <li class="sub-menu-item">
+                      <div class="sub-name">
+                        <span>현대백화점카드</span>
+                      </div>
+                      <div class="navigations">
+                        <ul>
+                          <li class="nav-list">
+                            <a href="#none">
+                            카드 소개 및 혜택
+                            </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            카드 신청
+                            </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            나의 백화점카드
+                            </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            이용 안내
+                            </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            법인카드
+                            </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            웰컴 라운지
+                            </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            공인인증센터
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="sub-menu-item">
+                      <div class="sub-name">
+                        <span>상품권</span>
+                      </div>
+                      <div class="navigations">
+                        <ul>
+                          <li class="nav-list">
+                            <a href="#none">
+                              상품권
+                            </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            모바일 교환권
+                            </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                              구입 안내
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="sub-menu-item">
+                      <div class="sub-name">
+                        <span>멤버쉽</span>
+                      </div>
+                      <div class="navigations">
+                        <ul>
+                          <li class="nav-list">
+                            <a href="#none">
+                            H.Point
+                            </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            클럽웨딩
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                  
+                  <div class="event-ban-sec">
+                    <a href="https://www.ehyundai.com/newPortal/ST/TS0000001_L.do">
+                      <img src="/assets/images/pc/20230405101029058.jpg" alt="h포인트">
+                    </a>
+                  </div>
+                </div>
               </li>
               <li class="gnb-list">
-                <a href="#"> ESG경영 </a>
+                <a href="#" class="gnb-list-title"> ESG경영 </a>
+                <div class="sub">
+                  <div class="sub-title">
+                    <p>
+                      ESG경영
+                      <span>하위 메뉴</span>
+                    </p>
+                  </div>
+                  <ul class="sub-menu-content">
+                    <li class="sub-menu-item">
+                      <div class="sub-name">
+                        <span>ESG경영</span>
+                      </div>
+                      <div class="navigations">
+                        <ul>
+                          <li class="nav-list">
+                            <a href="#none">
+                              ESG 경영 체계
+                            </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                            환경
+                            </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                              사회
+                            </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                              ESG 정보공시
+                            </a>
+                          </li>
+                          <li class="nav-list">
+                            <a href="#none">
+                              ESG보고서
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                  
+                  <div class="event-ban-sec">
+                    <a href="https://www.ehyundai.com/newPortal/ST/TS0000001_L.do">
+                      <img src="/assets/images/pc/39819daffeda46e980a4ccc9dfe5e1b6.png" alt="현대백화점의 지구사랑 Green Friends
+                      서울마이트리'내나무갖기'기부프로젝트">
+                    </a>
+                  </div>
+                </div>
               </li>
             </ul>
           </nav>
@@ -79,10 +795,10 @@
           </div>
 
           <div class="lang-choice">
-            <a href="#">
+            <a href="#none" class="lang-btn">
               <h2 class="gnb-title">언어선택</h2>
             </a>
-            <div>
+            <div class="lang-content-wrap">
               <ul class="lang-content">
                 <li class="lang-list">
                   <a href="#">ENG</a>
@@ -98,15 +814,104 @@
           </div>
 
           <div class="brand-search">
-            <a href="#">
+            <a href="#" class="search-btn">
               <span>지점 정보 검색</span>
             </a>
+            <div class="search-modal">
+              <div class="search-form-wrap">
+                <div class="search-form">
+                  <form action="">
+                    <div class="search-sel">
+                      <select class="select-origin" name="" id="">
+                        <option value="" selected>전체 지점</option>
+                        <option value="th1">더현대 서울점</option>
+                        <option value="th2">더현대 대구점</option>
+                        <option value="h1">압구정본점</option>
+                        <option value="h2">무역센터점</option>
+                        <option value="h3">천호점</option>
+                        <option value="h4">신촌점</option>
+                        <option value="h5">미아점</option>
+                        <option value="h6">목동점</option>
+                      </select>
+
+                      <div class="select-box">
+                        <a href="#none" class="select-btn">
+                          <span class="select-txt">전체 지점</span>
+                          <span class="select-ico"></span>
+                        </a>
+                        <div class="select-box-list">
+                          <ul class="select-box-content">
+                            <li class="select-box-item on">
+                              <a href="#none" data-value="" data-text="전체 지점">전체 지점</a>
+                            </li>
+                            <li class="select-box-item">
+                              <a href="#none" data-value="th1" data-text="더현대 서울점">더현대 서울점</a>
+                            </li>
+                            <li class="select-box-item">
+                              <a href="#none" data-value="th2" data-text="더현대 대구점">더현대 대구점</a>
+                            </li>
+                            <li class="select-box-item">
+                              <a href="#none" data-value="h1" data-text="압구정본점">압구정본점</a>
+                            </li>
+                            <li class="select-box-item">
+                              <a href="#none" data-value="h2" data-text="무역센터점">무역센터점</a>
+                            </li>
+                            <li class="select-box-item">
+                              <a href="#none" data-value="h3" data-text="천호점">천호점</a>
+                            </li>
+                            <li class="select-box-item">
+                              <a href="#none" data-value="h4" data-text="신촌점">신촌점</a>
+                            </li>
+                            <li class="select-box-item">
+                              <a href="#none" data-value="h5" data-text="미아점">미아점</a>
+                            </li>
+                            <li class="select-box-item">
+                              <a href="#none" data-value="h6" data-text="목동점">목동점</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="search-form-input">
+                      <input type="text" placeholder="검색어 입력" />
+                      <button class="submit-btn" type="submit">
+                        <span>검색하기</span>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="search-keyword">
+                <dl>
+                  <dt class="hotkeyword">인기검색어</dt>
+                  <dd>
+                    <ul class="keyword-content">
+                      <li class="keyword-list"><a href="#none">PEER</a></li>
+                      <li class="keyword-list"><a href="#none">폴로</a></li>
+                      <li class="keyword-list"><a href="#none">나이키</a></li>
+                      <li class="keyword-list"><a href="#none">주차</a></li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+              <a href="#none" class="search-close-btn">
+                <span>닫기</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </header>
     <!-- GNB 시작 -->
     <!-- header 끝 -->
+
+    <aside class="floating">
+      <div class="top-wrap">
+        <a href="#none" class="aside-top-btn">
+          <span>맨처음으로</span>
+        </a>
+      </div>
+    </aside>
 
     <!-- main 시작 -->
     <main class="main-container">
@@ -135,7 +940,7 @@
 
                 <div class="overview-address">
                   <span class="address">주소</span>
-                  <a href="#" title="위치/주차 메뉴로 이동">
+                  <a href="https://www.ehyundai.com/newPortal/DP/WC/WC000000_V.do?branchCd=B00140000" title="위치/주차 메뉴로 이동">
                     <span>서울 영등포구 여의대로 108, (여의도동,파크원)</span>
                   </a>
                 </div>
@@ -321,52 +1126,52 @@
             <h3 class="cont-title">더현대 서울</h3>
             <ul class="cont-links">
               <li class="cont-links-list">
-                <a href="#">
+                <a href="https://www.ehyundai.com/newPortal/DP/FG/FG000000_V.do?branchCd=B00140000">
                   <span>층별 안내</span>
                 </a>
               </li>
               <li class="cont-links-list">
-                <a href="#">
+                <a href="https://www.ehyundai.com/newPortal/SN/SN_0101000.do?branchCd=B00140000&n=1">
                   <span>행사 안내</span>
                 </a>
               </li>
               <li class="cont-links-list">
-                <a href="#">
+                <a href="https://www.ehyundai.com/newPortal/DP/DN/DN000000_V.do?branchCd=B00140000&diningGubn=B0670100&n=2">
                   <span>식당가</span>
                 </a>
               </li>
               <li class="cont-links-list">
-                <a href="#">
+                <a href="https://www.ehyundai.com/newPortal/DP/WC/WC000000_V.do?branchCd=B00140000">
                   <span>위치 / 주차</span>
                 </a>
               </li>
               <li class="cont-links-list">
-                <a href="#">
+                <a href="https://www.ehyundai.com/newPortal/DP/IF/IF000002_V.do?branchCd=B00140000">
                   <span>서비스 시설</span>
                 </a>
               </li>
               <li class="cont-links-list">
-                <a href="#">
+                <a href="https://www.ehyundai.com/newPortal/DP/AB000000_V.do?branchCd=B00140000">
                   <span>About 더현대 서울</span>
                 </a>
               </li>
               <li class="cont-links-list">
-                <a href="#">
+                <a href="https://www.ehyundai.com/newPortal/DP/ART00000_V.do?branchCd=B00140000">
                   <span>ART & Culture</span>
                 </a>
               </li>
               <li class="cont-links-list">
-                <a href="#">
+                <a href="https://www.ehyundai.com/newCulture/CT/CT010100_L.do?ctGubn=CH&&stCd=400">
                   <span>CH 1985</span>
                 </a>
               </li>
               <li class="cont-links-list">
-                <a href="#">
+                <a href="https://www.ehyundai.com/newPortal/DP/PH000000_V.do?branchCd=B00140000">
                   <span>PHOTO-SPOT</span>
                 </a>
               </li>
               <li class="cont-links-list">
-                <a href="#">
+                <a href="https://www.ehyundai.com/newPortal/DP/BT000000_V.do?branchCd=B00140000">
                   <span>벤치마킹 투어</span>
                 </a>
               </li>
@@ -460,7 +1265,7 @@
             <div class="food-banner-list">
               <ul class="food-content">
                 <li class="food-list">
-                  <a href="#" title="대표 식당가 바로가기">
+                  <a href="https://www.ehyundai.com/newPortal/DP/DN/DN000000_V.do?branchCd=B00140000&diningGubn=B0670100" title="대표 식당가 바로가기">
                     <img
                       src="./assets/images/seoul/img_banner_food.jpg"
                       alt="이탈리, 카페 레이어드, 호우섬, 아임유부"
@@ -473,26 +1278,19 @@
 
           <section class="cont-sec">
             <h3 class="cont-title">Special Place</h3>
-            <div class="slide-carousel-wrap">
+            <div class="slide-container">
               <!-- 인디게이터 영역 -->
               <div class="indi-progress">
                 <div class="track">
                   <span class="carousel-progress"></span>
                 </div>
               </div>
+
               <div class="indi-wrap"></div>
-              <div class="slide-content">
-                <div class="slide-track">
-                  <div class="slide-conts">
-                    <a href="#none">
-                      <img
-                        src="/assets/images/seoul/img_special_banner_pompeii_pc.jpg"
-                        alt="폼페이 유물전 그대, 그곳에 있었다"
-                        width="1210"
-                      />
-                    </a>
-                  </div>
-                  <div class="slide-conts">
+
+              <div class="slide-wrapper">
+                <div class="slide-items">
+                  <div class="slide-item" aria-hidden="true" tabindex="-1">
                     <a href="#none">
                       <img
                         src="/assets/images/seoul/img_special_banner_seoultour_pc.jpg"
@@ -501,6 +1299,42 @@
                       />
                     </a>
                   </div>
+                  <div class="slide-item" aria-hidden="false" tabindex="">
+                    <a href="#none">
+                      <img
+                        src="/assets/images/seoul/img_special_banner_pompeii_pc.jpg"
+                        alt="폼페이 유물전 그대, 그곳에 있었다"
+                        width="1210"
+                      />
+                    </a>
+                  </div>
+                  <div class="slide-item" aria-hidden="true" tabindex="-1">
+                    <a href="#none">
+                      <img
+                        src="/assets/images/seoul/img_special_banner_seoultour_pc.jpg"
+                        alt="더현대 서울 벤치마킹 투어"
+                        width="1210"
+                      />
+                    </a>
+                  </div>
+                  <div class="slide-item" aria-hidden="false" tabindex="">
+                    <a href="#none">
+                      <img
+                        src="/assets/images/seoul/img_special_banner_pompeii_pc.jpg"
+                        alt="폼페이 유물전 그대, 그곳에 있었다"
+                        width="1210"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="slide-controls">
+                  <button type="button" class="slide-btn-prev">
+                    <span>이전</span>
+                  </button>
+                  <button type="button" class="slide-btn-next">
+                    <span>다음</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -521,10 +1355,10 @@
                   </a>
                 </li>
                 <li class="add-banner-list">
-                  <a href="#">
+                  <a href="https://www.thehyundai.com/front/dpa/searchSpexSectItem.thd?sectId=197423">
                     <img
                       src="./assets/images/seoul/img_add_banner_showroom.png"
-                      alt="무료 주차권, 상품 할인 쿠폰 등 혜택이 가득 현대백화점 APP QR코드"
+                      alt="24시간 열려있는 프리미엄 온라인 쇼룸"
                       width="549"
                       height="200"
                     />
@@ -569,7 +1403,7 @@
 
             <div class="family-site">
               <h2>
-                <a href="#"> FAMILY SITE </a>
+                <a href="#none" class="family-site-btn"> FAMILY SITE </a>
               </h2>
               <ul class="family-site-content">
                 <li class="family-site-list">
@@ -653,22 +1487,22 @@
               </ul>
             </div>
 
-            <div class="sub">
+            <div class="sns">
               <h2>소셜미디어</h2>
-              <ul class="sub-content">
-                <li class="sub-list">
+              <ul class="sns-content">
+                <li class="sns-list">
                   <a href="#">유튜브</a>
                 </li>
-                <li class="sub-list">
+                <li class="sns-list">
                   <a href="#">블로그</a>
                 </li>
-                <li class="sub-list">
+                <li class="sns-list">
                   <a href="#">인스타그램</a>
                 </li>
-                <li class="sub-list">
+                <li class="sns-list">
                   <a href="#">포스트</a>
                 </li>
-                <li class="sub-list">
+                <li class="sns-list">
                   <a href="#">페이스북</a>
                 </li>
               </ul>
@@ -706,13 +1540,13 @@
                 <a href="#" title="새창열림">
                   <img
                     src="./assets/images/pc/footer_certification_ccm.png"
-                    alt=""
+                    alt="소비자중심경영 CCM"
                   />
                 </a>
               </li>
               <li class="quality-list">
                 <a href="#" title="새창열림">
-                  <img src="./assets/images/pc/footer_CSR_logo.png" alt="" />
+                  <img src="./assets/images/pc/footer_CSR_logo.png" alt="지역사회공헌 인정기업 CSR in the Community 2021" />
                 </a>
               </li>
             </ul>
@@ -721,5 +1555,8 @@
       </div>
     </footer>
     <!-- footer 끝 -->
+    <script src="/js/gnb.js"></script>
+    <script src="/js/slider.js"></script>
+    <script src="/js/footer.js"></script>
   </body>
 </html>
