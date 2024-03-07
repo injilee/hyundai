@@ -10,6 +10,12 @@
     <link rel="icon" href="/assets/images/ico_favicon.png" />
     <link rel="stylesheet" href="style.css" />
     <script src="/lib/jquery-3.7.1.min.js"></script>
+    <script>
+      const ua = window.navigator.userAgent.toLowerCase();
+      if(/iphone/.test(ua) || /android/.test(ua) || /opera/.test(ua) || /bada/.test(ua) || /ipad/.test(ua) || /windows ce/.test(ua)){
+        document.location.replace('/mobile/index.html')
+      }
+    </script>
   </head>
   <body>
     <!-- header 시작 -->
@@ -1299,7 +1305,7 @@
                       />
                     </a>
                   </div>
-                  <div class="slide-item" aria-hidden="false" tabindex="">
+                  <div class="slide-item" aria-hidden="true" tabindex="">
                     <a href="#none">
                       <img
                         src="/assets/images/seoul/img_special_banner_pompeii_pc.jpg"
@@ -1308,7 +1314,7 @@
                       />
                     </a>
                   </div>
-                  <div class="slide-item" aria-hidden="true" tabindex="-1">
+                  <div class="slide-item" aria-hidden="false" tabindex="-1">
                     <a href="#none">
                       <img
                         src="/assets/images/seoul/img_special_banner_seoultour_pc.jpg"
