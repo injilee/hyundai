@@ -1,0 +1,83 @@
+// flex box 정의
+$flex-map: (
+  between: space-between,
+  around: space-around,
+  start: flex-start,
+  end: flex-end,
+  stretch: stretch,
+  center: center,
+);
+
+// Breakpoints 정의
+$breakpoint-mobile: 335px;
+$breakpoint-tablet: 758px;
+
+//  숨김 스타일(웹접근성)
+@mixin hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+// position 중앙 배치
+@mixin pos-center($type: absoulte) {
+  @if ($type == fixed or $type == absolute) {
+    position: $type;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// 정의한 flex box 값 가져오는 함수
+@function _get-flex-value($key) {
+  @return map-get($flex-map, $key);
+}
+
+// flex 정렬
+@mixin flexbox($jc: center, $ai: center) {
+  display: flex;
+  align-items: _get-flex-value($ai);
+  justify-content: _get-flex-value($jc);
+}
+
+// inline-flex 정렬
+@mixin inline-flexbox($jc: center, $ai: center) {
+  display: inline-flex;
+  align-items: _get-flex-value($ai);
+  justify-content: _get-flex-value($jc);
+}
+
+// flex column 정렬
+@mixin column-flexbox($jc: center, $ai: center) {
+  display: flex;
+  flex-direction: column;
+  align-items: _get-flex-value($ai);
+  justify-content: _get-flex-value($jc);
+}
+
+// background-image 처리
+@mixin background-img($pos: center) {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: $pos;
+}
+
+// mediaquery
+@mixin mobile {
+  @media (min-width: #{$breakpoint-tablet}) {
+    @content;
+  }
+}
