@@ -1,0 +1,287 @@
+.footer {
+  position: relative;
+  background-color: $black;
+
+  &-wrap {
+    padding: 64px 20px 24px;
+    margin: 0 auto;
+    background-color: $black;
+
+    .logo {
+      position: relative;
+      width: 363px;
+
+      &::before {
+        @include background-img;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 158px;
+        height: 28px;
+        background-image: url('/assets/images/pc/logo_footer.png');
+      }
+
+      & > span {
+        @include hidden;
+      }
+    }
+
+    .conts-site {
+      position: relative;
+
+      & > h2 {
+        @include hidden;
+      }
+
+      .related-site {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 62px;
+      }
+
+      .family-site {
+        position: relative;
+        margin-left: -13px;
+        height: 45px;
+
+        & > h2 {
+          width: 136px;
+
+          & > a {
+            display: block;
+            width: 100%;
+            padding: 11px 32px 11px 12px;
+            @include text-style-14;
+            color: $gray04;
+            background-color: $black;
+            border: 1px solid transparent;
+
+            &::after {
+              @include background-img;
+              position: absolute;
+              top: 50%;
+              right: 12px;
+              width: 16px;
+              height: 16px;
+              content: '';
+              margin-top: -8px;
+              background-image: url('./assets/images/icons/ico_arrow_down_16_gray.png');
+              transform: rotate(360deg);
+            }
+          }
+        }
+
+        &-content {
+          display: none;
+          position: absolute;
+          overflow-y: auto;
+          width: 100%;
+          max-height: 312px;
+          padding: 6px 0;
+          color: $gray04;
+          background-color: $black;
+          border: 1px solid $gray01;
+          z-index: $family-site-level;
+
+          .family-site-list {
+            margin: 0;
+
+            & > a {
+              @include text-style-12;
+              display: block;
+              padding: 6px 16px;
+              font-weight: $font-w4;
+              color: $gray04;
+
+              &:hover {
+                color: $white;
+                font-weight: $font-w7;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+
+      .family-site.on .family-site-btn {
+        &::after {
+          transform: rotate(180deg);
+        }
+      }
+
+      .family-site.on .family-site-content {
+        display: block;
+      }
+
+      .family-site.on .family-site-btn {
+        border: 1px solid $gray01;
+      }
+
+      .lang-dropdown {
+        position: relative;
+        height: 45px;
+        margin-left: 30px;
+
+        & > h2 {
+          width: 98px;
+
+          .lang-dropdown-btn {
+            display: block;
+            width: 100%;
+            padding: 11px 32px 11px 12px;
+            @include text-style-14;
+            color: $gray04;
+            background-color: $black;
+            border: 1px solid transparent;
+
+            &::after {
+              @include background-img;
+              position: absolute;
+              top: 50%;
+              right: 12px;
+              width: 16px;
+              height: 16px;
+              content: '';
+              margin-top: -8px;
+              background-image: url('./assets/images/icons/ico_arrow_down_16_gray.png');
+              transform: rotate(360deg);
+            }
+          }
+        }
+
+        .lang-dropdown-content {
+          display: none;
+          position: absolute;
+          overflow-y: auto;
+          width: 100%;
+          max-height: 312px;
+          padding: 6px 0;
+          color: $gray04;
+          background-color: $black;
+          border: 1px solid $gray01;
+          z-index: $family-site-level;
+
+          .lang-dropdown-list {
+            margin: 0;
+
+            & > a {
+              @include text-style-12;
+              display: block;
+              padding: 6px 16px;
+              font-weight: $font-w4;
+              color: $gray04;
+
+              &:hover {
+                color: $white;
+                font-weight: $font-w7;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+
+      .lang-dropdown.on .lang-dropdown-btn {
+        &::after {
+          transform: rotate(180deg);
+        }
+      }
+
+      .lang-dropdown.on .lang-dropdown-content {
+        display: block;
+      }
+
+      .lang-dropdown.on .lang-dropdown-btn {
+        border: 1px solid $gray01;
+      }
+
+      .ref-link {
+        display: flex;
+        margin-top: 28px;
+
+        & > h2 {
+          @include hidden;
+        }
+
+        .legacy {
+          &-content {
+            display: flex;
+            flex-wrap: wrap;
+            width: 332px;
+
+            .legacy-list {
+              display: inline-block;
+              width: 166px;
+
+              & > a {
+                display: inline-block;
+                @include text-style-14;
+                font-weight: $font-w4;
+                color: $gray03;
+              }
+
+              &:nth-child(3) a {
+                color: $white;
+                font-weight: $font-w7;
+              }
+
+              &:nth-child(n + 3) {
+                margin-top: 12px;
+              }
+            }
+          }
+        }
+      }
+
+      .site-info {
+        margin-top: 40px;
+        padding-right: 30px;
+
+        & > h2 {
+          @include hidden;
+        }
+
+        &-content {
+          .site-info-list {
+            display: block;
+            @include text-style-14;
+            font-weight: $font-w4;
+            color: $gray03;
+
+            &:nth-child(2) {
+              & > a:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+
+        .copyright {
+          @include text-style-12;
+          font-weight: $font-w4;
+          color: $gray03;
+          margin-top: 26px;
+        }
+      }
+    }
+  }
+
+  .top-wrap {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+
+    .aside-top-btn {
+      @include background-img;
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      background-image: url('/assets/images/icons/ico_top_72_black.png');
+
+      & > span {
+        @include hidden;
+      }
+    }
+  }
+}
