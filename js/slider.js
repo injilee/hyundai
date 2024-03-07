@@ -68,6 +68,7 @@ slider.on('mousedown ', (e) => {
 slider.on('mousemove', function (e) {
   if (isMouseDown) {
     movePoint = e.pageX
+    locateNum = startPoint - movePoint
   }
 })
 
