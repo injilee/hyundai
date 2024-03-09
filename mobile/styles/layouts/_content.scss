@@ -328,7 +328,7 @@
         &::after {
           @include background-img;
           @include pos-center(absolute);
-          background-image: url('/./assets/images/icons/ico_arrow_right_20_white.png');
+          background-image: url('./assets/images/icons/ico_arrow_right_20_white.png');
           content: '';
           display: inline-block;
           width: 20px;

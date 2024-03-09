@@ -1027,7 +1027,7 @@ img {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          background-image: url("/./assets/images/icons/ico_arrow_right_20_white.png");
+          background-image: url("./assets/images/icons/ico_arrow_right_20_white.png");
           content: '';
           display: inline-block;
           width: 20px;
