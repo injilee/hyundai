@@ -442,7 +442,7 @@ img {
           width: 24px;
           height: 24px;
           margin-top: 4px;
-          background-image: url("assets/images/icons/ico_arrow_left_24_white.png"); }
+          background-image: url("./assets/images/icons/ico_arrow_left_24_white.png"); }
         .snb .header-wrap .logo-container .logo-txt {
           position: absolute;
           width: 1px;
@@ -476,7 +476,7 @@ img {
             margin-top: 2px;
             width: 25px;
             height: 25px;
-            background-image: url("assets/images/icons/ico_menu_16_white.png"); }
+            background-image: url("./assets/images/icons/ico_menu_16_white.png"); }
           .snb .header-wrap .gnb-container .all-menu .gnb-menu-btn > span {
             position: absolute;
             width: 1px;
@@ -524,7 +524,7 @@ img {
             background-position: center;
             width: 24px;
             height: 24px;
-            background-image: url("assets/images/icons/ico_home_24_white.png"); }
+            background-image: url("./assets/images/icons/ico_home_24_white.png"); }
             .snb .header-wrap .gnb-container .all-menu .gnb-top-menu .gnb-top-home > span {
               position: absolute;
               width: 1px;
@@ -539,7 +539,7 @@ img {
             display: inline-block;
             width: 24px;
             height: 24px;
-            background-image: url("assets/images/icons/ico_search_24_white.png"); }
+            background-image: url("./assets/images/icons/ico_search_24_white.png"); }
             .snb .header-wrap .gnb-container .all-menu .gnb-top-menu .gnb-search-btn > span {
               position: absolute;
               width: 1px;
@@ -554,7 +554,7 @@ img {
             display: inline-block;
             width: 24px;
             height: 24px;
-            background-image: url("assets/images/icons/ico_close_24_white.png");
+            background-image: url("./assets/images/icons/ico_close_24_white.png");
             margin: 3px 0 0 12px; }
             .snb .header-wrap .gnb-container .all-menu .gnb-top-menu .gnb-top-close > span {
               position: absolute;
@@ -637,7 +637,7 @@ img {
                 margin-top: 2px;
                 margin-left: 2px;
                 vertical-align: top;
-                background-image: url("assets/images/icons/ico_arrow_right_16_black.png"); }
+                background-image: url("./assets/images/icons/ico_arrow_right_16_black.png"); }
             .snb .header-wrap .gnb-container .all-menu .gnb-menu-content-wrap .gnb-menu-content .gnb-menu-list .gnb-sub-menu > dl > dd {
               padding-top: 12px; }
             .snb .header-wrap .gnb-container .all-menu .gnb-menu-content-wrap .gnb-menu-content .gnb-menu-list .gnb-sub-menu .gnb-sub-menu-items {
@@ -658,7 +658,7 @@ img {
                 content: '';
                 margin-top: 3px;
                 vertical-align: top;
-                background-image: url("assets/images/icons/ico_link_16_black.png"); }
+                background-image: url("./assets/images/icons/ico_link_16_black.png"); }
             .snb .header-wrap .gnb-container .all-menu .gnb-menu-content-wrap .gnb-menu-content .gnb-menu-list .gnb-sub-menu > a {
               font-size: 14px;
               line-height: 1.5;
@@ -679,7 +679,7 @@ img {
               content: '';
               margin-top: 3px;
               vertical-align: top;
-              background-image: url("assets/images/icons/ico_link_16_black.png"); }
+              background-image: url("./assets/images/icons/ico_link_16_black.png"); }
           .snb .header-wrap .gnb-container .all-menu .gnb-menu-content-wrap .gnb-menu-list.on > a {
             font-weight: 700;
             color: #00815a; }
@@ -716,7 +716,7 @@ img {
               content: '';
               vertical-align: top;
               transform: rotate(180deg);
-              background-image: url("assets/images/icons/ico_arrow_down_20_black.png"); }
+              background-image: url("./assets/images/icons/ico_arrow_down_20_black.png"); }
               .snb .header-wrap .gnb-container .all-menu .gnb-family-app .family-app-btn > span > i {
                 position: absolute;
                 width: 1px;
@@ -902,7 +902,7 @@ img {
                   width: 20px;
                   height: 20px;
                   margin-top: -11px;
-                  background-image: url("assets/images/icons/ico_tell_black.svg");
+                  background-image: url("././assets/images/icons/ico_tell_black.svg");
                   content: ''; }
         .main-container .overview-box .information .info-desc-list {
           display: flex;
@@ -958,13 +958,13 @@ img {
                   content: '';
                   transform: translateX(-50%); }
                 .main-container .overview-box .information .info-sub-menu-list .info-sub-menu-item > a .ico-floor::after {
-                  background-image: url("assets/images/icons/ico_overview_floor_black.svg"); }
+                  background-image: url("./assets/images/icons/ico_overview_floor_black.svg"); }
                 .main-container .overview-box .information .info-sub-menu-list .info-sub-menu-item > a .ico-car::after {
-                  background-image: url("assets/images/icons/ico_overview_car_black.svg"); }
+                  background-image: url("./assets/images/icons/ico_overview_car_black.svg"); }
                 .main-container .overview-box .information .info-sub-menu-list .info-sub-menu-item > a .ico-food::after {
-                  background-image: url("assets/images/icons/ico_overview_food_black.svg"); }
+                  background-image: url("./assets/images/icons/ico_overview_food_black.svg"); }
                 .main-container .overview-box .information .info-sub-menu-list .info-sub-menu-item > a .ico-service::after {
-                  background-image: url("assets/images/icons/ico_overview_service_black.svg"); }
+                  background-image: url("./assets/images/icons/ico_overview_service_black.svg"); }
   .main-container .event-banner-list {
     position: relative;
     margin-top: 20px; }
@@ -1027,7 +1027,7 @@ img {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          background-image: url("/assets/images/icons/ico_arrow_right_20_white.png");
+          background-image: url("/./assets/images/icons/ico_arrow_right_20_white.png");
           content: '';
           display: inline-block;
           width: 20px;
@@ -1125,7 +1125,7 @@ img {
         content: '';
         width: 158px;
         height: 28px;
-        background-image: url("/assets/images/pc/logo_footer.png"); }
+        background-image: url("./assets/images/logo_footer.png"); }
       .footer-wrap .logo > span {
         position: absolute;
         width: 1px;
@@ -1332,7 +1332,7 @@ img {
       display: inline-block;
       width: 32px;
       height: 32px;
-      background-image: url("/assets/images/icons/ico_top_72_black.png"); }
+      background-image: url("./assets/images/icons/ico_top_72_black.png"); }
       .footer .top-wrap .aside-top-btn > span {
         position: absolute;
         width: 1px;

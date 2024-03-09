@@ -19,7 +19,7 @@
         content: '';
         width: 158px;
         height: 28px;
-        background-image: url('/assets/images/pc/logo_footer.png');
+        background-image: url('./assets/images/logo_footer.png');
       }
 
       & > span {
@@ -277,7 +277,7 @@
       display: inline-block;
       width: 32px;
       height: 32px;
-      background-image: url('/assets/images/icons/ico_top_72_black.png');
+      background-image: url('./assets/images/icons/ico_top_72_black.png');
 
       & > span {
         @include hidden;

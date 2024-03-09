@@ -96,7 +96,7 @@
             width: 28px;
             height: 28px;
             content: '';
-            background-image: url('/assets/images/icons/ico_arrow_down_28_white.png');
+            background-image: url('./assets/images/icons/ico_arrow_down_28_white.png');
             @include background-img;
             transform: translateY(-50%);
           }
@@ -120,7 +120,7 @@
             width: 24px;
             height: 24px;
             content: '';
-            background-image: url('/assets/images/icons/ico_location_24_white.png');
+            background-image: url('./assets/images/icons/ico_location_24_white.png');
             @include background-img;
           }
 
@@ -246,7 +246,7 @@
                   left: 0;
                   width: 20px;
                   height: 20px;
-                  background-image: url('/assets/images/icons/ico_arrow_right_20_black.png');
+                  background-image: url('./assets/images/icons/ico_arrow_right_20_black.png');
                   margin-top: -10px;
                   transform: rotate(180deg);
                 }
@@ -265,7 +265,7 @@
                   right: 0;
                   width: 20px;
                   height: 20px;
-                  background-image: url('/assets/images/icons/ico_arrow_right_20_black.png');
+                  background-image: url('./assets/images/icons/ico_arrow_right_20_black.png');
                   margin-top: -10px;
                 }
               }
@@ -452,7 +452,7 @@
         &::after {
           @include background-img;
           @include pos-center(absolute);
-          background-image: url('/assets/images/icons/ico_arrow_right_20_white.png');
+          background-image: url('./assets/images/icons/ico_arrow_right_20_white.png');
           content: '';
           display: inline-block;
           width: 20px;
@@ -553,7 +553,7 @@
           display: block;
           width: 28px;
           height: 28px;
-          background-image: url('/assets/images/icons/ico_arrow_right_28_white.png');
+          background-image: url('./assets/images/icons/ico_arrow_right_28_white.png');
           transform: rotate(180deg);
 
           & > span {
@@ -569,7 +569,7 @@
           display: block;
           width: 28px;
           height: 28px;
-          background-image: url('/assets/images/icons/ico_arrow_right_28_white.png');
+          background-image: url('./assets/images/icons/ico_arrow_right_28_white.png');
 
           & > span {
             @include hidden;

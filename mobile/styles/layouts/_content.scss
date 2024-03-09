@@ -156,7 +156,7 @@
                   width: 20px;
                   height: 20px;
                   margin-top: -11px;
-                  background-image: url('assets/images/icons/ico_tell_black.svg');
+                  background-image: url('././assets/images/icons/ico_tell_black.svg');
                   content: '';
                 }
               }
@@ -231,19 +231,19 @@
                 }
 
                 .ico-floor::after {
-                  background-image: url('assets/images/icons/ico_overview_floor_black.svg');
+                  background-image: url('./assets/images/icons/ico_overview_floor_black.svg');
                 }
 
                 .ico-car::after {
-                  background-image: url('assets/images/icons/ico_overview_car_black.svg');
+                  background-image: url('./assets/images/icons/ico_overview_car_black.svg');
                 }
 
                 .ico-food::after {
-                  background-image: url('assets/images/icons/ico_overview_food_black.svg');
+                  background-image: url('./assets/images/icons/ico_overview_food_black.svg');
                 }
 
                 .ico-service::after {
-                  background-image: url('assets/images/icons/ico_overview_service_black.svg');
+                  background-image: url('./assets/images/icons/ico_overview_service_black.svg');
                 }
               }
             }
@@ -328,7 +328,7 @@
         &::after {
           @include background-img;
           @include pos-center(absolute);
-          background-image: url('/assets/images/icons/ico_arrow_right_20_white.png');
+          background-image: url('/./assets/images/icons/ico_arrow_right_20_white.png');
           content: '';
           display: inline-block;
           width: 20px;
