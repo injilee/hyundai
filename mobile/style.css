@@ -1207,33 +1207,33 @@ img {
         border: 1px solid #434545; }
       .footer-wrap .conts-site .lang-dropdown {
         position: relative;
+        width: 98px;
         height: 45px;
         margin-left: 30px; }
-        .footer-wrap .conts-site .lang-dropdown > h2 {
-          width: 98px; }
-          .footer-wrap .conts-site .lang-dropdown > h2 .lang-dropdown-btn {
-            display: block;
-            width: 100%;
-            padding: 11px 32px 11px 12px;
+        .footer-wrap .conts-site .lang-dropdown .lang-dropdown-btn {
+          display: block;
+          width: 100%;
+          padding: 11px 32px 11px 12px;
+          background-color: #171a19;
+          border: 1px solid transparent; }
+          .footer-wrap .conts-site .lang-dropdown .lang-dropdown-btn::after {
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            position: absolute;
+            top: 50%;
+            right: 12px;
+            width: 16px;
+            height: 16px;
+            content: '';
+            margin-top: -8px;
+            background-image: url("./assets/images/icons/ico_arrow_down_16_gray.png");
+            transform: rotate(360deg); }
+          .footer-wrap .conts-site .lang-dropdown .lang-dropdown-btn > h2 {
             font-size: 14px;
             line-height: 1.5;
             letter-spacing: -0.25px;
-            color: #d4d6d4;
-            background-color: #171a19;
-            border: 1px solid transparent; }
-            .footer-wrap .conts-site .lang-dropdown > h2 .lang-dropdown-btn::after {
-              background-repeat: no-repeat;
-              background-size: contain;
-              background-position: center;
-              position: absolute;
-              top: 50%;
-              right: 12px;
-              width: 16px;
-              height: 16px;
-              content: '';
-              margin-top: -8px;
-              background-image: url("./assets/images/icons/ico_arrow_down_16_gray.png");
-              transform: rotate(360deg); }
+            color: #d4d6d4; }
         .footer-wrap .conts-site .lang-dropdown .lang-dropdown-content {
           display: none;
           position: absolute;

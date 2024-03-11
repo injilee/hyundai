@@ -2,7 +2,6 @@ const logo = $('.logo')
 const lang = $('.lang-choice')
 const searchModal = $('.search-modal')
 const gateBtn = $('.toggle-gate')
-const langBtn = $('.lang-btn')
 const searchBtn = $('.search-btn')
 const closeBtn = $('.search-close-btn')
 const gnbMenu = $('.gnb-menu-wrap')
@@ -19,11 +18,6 @@ const selectTxt = $('.select-txt')
 // 현대백화점 / 더현대닷컴 바로가기 토글
 gateBtn.on('click', function () {
   $(logo).toggleClass('on')
-})
-
-// gnb 언어선택 토글
-langBtn.on('click', function () {
-  $(lang).toggleClass('on')
 })
 
 // search 모달창 토글
