@@ -799,7 +799,7 @@ img {
     margin-left: -20px; }
     .main-container .intro-visual {
       position: absolute;
-      width: 100%;
+      width: 100vw;
       height: 100%; }
       .main-container .intro-visual .img-wrap {
         position: absolute;
