@@ -9,7 +9,6 @@
 
     .logo {
       position: relative;
-      width: 363px;
 
       &::before {
         @include background-img;
@@ -197,7 +196,6 @@
       }
 
       .ref-link {
-        display: flex;
         margin-top: 28px;
 
         & > h2 {
@@ -206,13 +204,12 @@
 
         .legacy {
           &-content {
-            display: flex;
-            flex-wrap: wrap;
-            width: 332px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
 
             .legacy-list {
               display: inline-block;
-              width: 166px;
+              width: 100%;
 
               & > a {
                 display: inline-block;

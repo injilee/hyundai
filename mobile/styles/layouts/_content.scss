@@ -36,7 +36,8 @@
 
     &-visual {
       position: absolute;
-      width: 100%;
+      left: 0;
+      right: 0;
       height: 100%;
 
       .img-wrap {
@@ -51,31 +52,36 @@
         }
       }
 
-      .txt span {
+      .txt {
         position: absolute;
         left: 50%;
-        display: inline-block;
-        width: 400px;
-        line-height: 3rem;
-        letter-spacing: -0.25px;
-        font-size: 3rem;
-        font-weight: $font-w9;
-        color: $white;
+        width: Min(100%, 400px);
         transform: translateX(-50%);
 
-        &:nth-child(1) {
-          top: 448px;
-          padding-left: 10px;
-        }
+        & > span {
+          position: absolute;
+          display: inline-block;
+          width: calc(100% - 10px);
+          line-height: 3rem;
+          letter-spacing: -0.25px;
+          font-size: 3rem;
+          font-weight: $font-w9;
+          color: $white;
 
-        &:nth-child(2) {
-          top: 496px;
-          padding-right: 10px;
-          font-size: 4rem;
-          line-height: 4rem;
-          color: rgba(0, 0, 0, 0);
-          -webkit-text-stroke: 1px #fff;
-          text-align: right;
+          &:nth-child(1) {
+            top: 448px;
+            padding-left: 10px;
+          }
+
+          &:nth-child(2) {
+            top: 496px;
+            padding-right: 10px;
+            font-size: 4rem;
+            line-height: 4rem;
+            color: rgba(0, 0, 0, 0);
+            -webkit-text-stroke: 1px #fff;
+            text-align: right;
+          }
         }
       }
     }
