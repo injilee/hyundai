@@ -794,7 +794,7 @@ img {
     margin-top: 24px; }
   .main-container .intro {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 560px;
     margin-left: -20px; }
     .main-container .intro-visual {
@@ -1087,17 +1087,16 @@ img {
         .main-container .add-banner .indi-wrap .indi-dots .indi-dot:not(:first-child) {
           margin-left: 15px; }
     .main-container .add-banner .slide-banner {
-      overflow-x: auto;
-      max-width: 750px; }
+      overflow-x: hidden; }
       .main-container .add-banner .slide-banner .add-banner-content {
         display: flex;
-        width: 100%;
         flex-wrap: nowrap;
         overflow: hidden;
         scroll-behavior: smooth; }
         .main-container .add-banner .slide-banner .add-banner-content .add-banner-list > a {
           -webkit-user-drag: none; }
           .main-container .add-banner .slide-banner .add-banner-content .add-banner-list > a > img {
+            width: 100%;
             vertical-align: top;
             -webkit-user-drag: none; }
       .main-container .add-banner .slide-banner .add-banner-content.dragging {
