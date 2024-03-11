@@ -83,13 +83,25 @@
             text-align: right;
           }
         }
+
+        @media (max-width: 401px) {
+          & > span {
+            &:nth-child(1) {
+              top: 448px;
+            }
+
+            &:nth-child(2) {
+              top: 543px;
+            }
+          }
+        }
       }
     }
   }
 
   // section 1
   .overview {
-    margin-top: 48px;
+    margin-top: 80px;
 
     &-top {
       @include flexbox(between, center);

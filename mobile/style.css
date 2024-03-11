@@ -837,8 +837,13 @@ img {
             color: rgba(0, 0, 0, 0);
             -webkit-text-stroke: 1px #fff;
             text-align: right; }
+        @media (max-width: 401px) {
+          .main-container .intro-visual .txt > span:nth-child(1) {
+            top: 448px; }
+          .main-container .intro-visual .txt > span:nth-child(2) {
+            top: 543px; } }
   .main-container .overview {
-    margin-top: 48px; }
+    margin-top: 80px; }
     .main-container .overview-top {
       display: flex;
       align-items: center;
