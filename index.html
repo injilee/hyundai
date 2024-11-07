@@ -16,6 +16,9 @@
         document.location.replace('./mobile/index.html')
       }
     </script>
+    <script src="./js/gnb.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/footer.js"></script>
   </head>
   <body>
     <!-- header 시작 -->
@@ -820,7 +823,7 @@
           </div>
 
           <div class="brand-search">
-            <a href="#" class="search-btn">
+            <a href="javascript:void(0)" class="search-btn">
               <span>지점 정보 검색</span>
             </a>
             <div class="search-modal">
@@ -900,7 +903,7 @@
                   </dd>
                 </dl>
               </div>
-              <a href="#none" class="search-close-btn">
+              <a href="javascript:void(0)" class="search-close-btn">
                 <span>닫기</span>
               </a>
             </div>
@@ -973,7 +976,7 @@
                       <dt>대표전화</dt>
                       <dd>02-767-2233</dd>
                       <dt>휴점일</dt>
-                      <dd>02.09(금), 02.10(토)</dd>
+                      <dd>11.08(금), 11.09(토)</dd>
                     </dl>
                   </div>
                 </div>
@@ -982,13 +985,13 @@
                     <div class="viwe-area-container">
                       <div class="select-day">
                         <div class="calendar-header">
-                          <a class="calendar-btn-prev" href="#none"></a>
+                          <a class="calendar-btn-prev" onclick="prevMonth()"></a>
                           <div class="calendar-month">
-                            <span>2024.02</span>
+                            <span class="calendar-view"></span>
                           </div>
-                          <a class="calendar-btn-next" href="#none"></a>
+                          <a class="calendar-btn-next" onclick="nextMonth()"></a>
                         </div>
-                        <div class="calendar-date">
+                        <div class="calendar-table-container">
                           <table class="calendar-table">
                             <colgroup>
                               <col width="32px" />
@@ -1013,105 +1016,49 @@
 
                               <tbody>
                                 <tr>
+                                  <td class="calendar-date extend"></td>
                                   <td class="calendar-date"></td>
                                   <td class="calendar-date"></td>
                                   <td class="calendar-date"></td>
                                   <td class="calendar-date"></td>
-                                  <td class="calendar-date">
-                                    <span>1</span>
-                                  </td>
-                                  <td class="calendar-date extend">
-                                    <span>2</span>
-                                  </td>
-                                  <td class="calendar-date extend">
-                                    <span>3</span>
-                                  </td>
+                                  <td class="calendar-date extend"></td>
+                                  <td class="calendar-date extend"></td>
                                 </tr>
                                 <tr>
-                                  <td class="calendar-date extend">
-                                    <span>4</span>
-                                  </td>
-                                  <td class="calendar-date extend">
-                                    <span>5</span>
-                                  </td>
-                                  <td class="calendar-date extend">
-                                    <span>6</span>
-                                  </td>
-                                  <td class="calendar-date extend">
-                                    <span>7</span>
-                                  </td>
-                                  <td class="calendar-date extend">
-                                    <span>8</span>
-                                  </td>
-                                  <td class="calendar-date holiday">
-                                    <span>9</span>
-                                  </td>
-                                  <td class="calendar-date holiday">
-                                    <span>10</span>
-                                  </td>
+                                  <td class="calendar-date extend"></td>
+                                  <td class="calendar-date"></td>
+                                  <td class="calendar-date"></td>
+                                  <td class="calendar-date"></td>
+                                  <td class="calendar-date"></td>
+                                  <td class="calendar-date holiday"></td>
+                                  <td class="calendar-date holiday"></td>
                                 </tr>
                                 <tr>
-                                  <td class="calendar-date extend">
-                                    <span>11</span>
-                                  </td>
-                                  <td class="calendar-date extend">
-                                    <span>12</span>
-                                  </td>
-                                  <td class="calendar-date">
-                                    <span>13</span>
-                                  </td>
-                                  <td class="calendar-date">
-                                    <span>14</span>
-                                  </td>
-                                  <td class="calendar-date">
-                                    <span>15</span>
-                                  </td>
-                                  <td class="calendar-date extend">
-                                    <span>16</span>
-                                  </td>
-                                  <td class="calendar-date extend">
-                                    <span>17</span>
-                                  </td>
+                                  <td class="calendar-date extend"></td>
+                                  <td class="calendar-date"></td>
+                                  <td class="calendar-date"></td>
+                                  <td class="calendar-date"></td>
+                                  <td class="calendar-date"></td>
+                                  <td class="calendar-date extend"></td>
+                                  <td class="calendar-date extend"></td>
                                 </tr>
                                 <tr>
-                                  <td class="calendar-date extend">
-                                    <span>18</span>
-                                  </td>
-                                  <td class="calendar-date">
-                                    <span>19</span>
-                                  </td>
-                                  <td class="calendar-date">
-                                    <span>20</span>
-                                  </td>
-                                  <td class="calendar-date">
-                                    <span>21</span>
-                                  </td>
-                                  <td class="calendar-date">
-                                    <span>22</span>
-                                  </td>
-                                  <td class="calendar-date extend">
-                                    <span>23</span>
-                                  </td>
-                                  <td class="calendar-date extend">
-                                    <span>24</span>
-                                  </td>
+                                  <td class="calendar-date extend"></td>
+                                  <td class="calendar-date"></td>
+                                  <td class="calendar-date"></td>
+                                  <td class="calendar-date"></td>
+                                  <td class="calendar-date"></td>
+                                  <td class="calendar-date extend"></td>
+                                  <td class="calendar-date extend"></td>
                                 </tr>
                                 <tr>
-                                  <td class="calendar-date extend">
-                                    <span>25</span>
-                                  </td>
-                                  <td class="calendar-date">
-                                    <span>26</span>
-                                  </td>
-                                  <td class="calendar-date">
-                                    <span>27</span>
-                                  </td>
-                                  <td class="calendar-date">
-                                    <span>28</span>
-                                  </td>
-                                  <td class="calendar-date">
-                                    <span>29</span>
-                                  </td>
+                                  <td class="calendar-date extend"></td>
+                                  <td class="calendar-date"></td>
+                                  <td class="calendar-date"></td>
+                                  <td class="calendar-date"></td>
+                                  <td class="calendar-date"></td>
+                                  <td class="calendar-date extend"></td>
+                                  <td class="calendar-date extend"></td>
                                 </tr>
                               </tbody>
                             </thead>
@@ -1561,8 +1508,6 @@
       </div>
     </footer>
     <!-- footer 끝 -->
-    <script src="./js/gnb.js"></script>
-    <script src="./js/slider.js"></script>
-    <script src="./js/footer.js"></script>
+    <script src="./js/calendar.js"></script>
   </body>
 </html>
