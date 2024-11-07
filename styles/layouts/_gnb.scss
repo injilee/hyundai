@@ -189,6 +189,7 @@
             margin-left: 32px;
 
             & > p {
+              width: 200px;
               @include text-style-32;
               font-weight: $font-w7;
               color: $black;
