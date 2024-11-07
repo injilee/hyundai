@@ -561,6 +561,7 @@ img {
             width: 220px;
             margin-left: 32px; }
             .snb .gnb-content .gnb-list .sub .sub-title > p {
+              width: 200px;
               font-size: 32px;
               line-height: 1.3;
               letter-spacing: -0.25px;
@@ -1089,13 +1090,14 @@ img {
                 height: 20px;
                 background-image: url("./assets/images/icons/ico_arrow_right_20_black.png");
                 margin-top: -10px; }
-            .main-container .overview-box .calendar .viwe-area-container .select-day .calendar-date {
+            .main-container .overview-box .calendar .viwe-area-container .select-day .calendar-table-container {
               margin: 10px -6px 0; }
-              .main-container .overview-box .calendar .viwe-area-container .select-day .calendar-date .calendar-table {
+              .main-container .overview-box .calendar .viwe-area-container .select-day .calendar-table-container .calendar-table {
                 width: 100%;
+                height: 195px;
                 table-layout: fixed;
-                border-collapse: collapse; }
-                .main-container .overview-box .calendar .viwe-area-container .select-day .calendar-date .calendar-table .calendar-dayname {
+                border-spacing: 4px; }
+                .main-container .overview-box .calendar .viwe-area-container .select-day .calendar-table-container .calendar-table .calendar-dayname {
                   padding: 5px 6px;
                   font-size: 12px;
                   line-height: 1.5;
@@ -1104,8 +1106,7 @@ img {
                   line-height: 1.4;
                   color: #727573;
                   text-align: center; }
-                .main-container .overview-box .calendar .viwe-area-container .select-day .calendar-date .calendar-table .calendar-date {
-                  padding: 5px 6px;
+                .main-container .overview-box .calendar .viwe-area-container .select-day .calendar-table-container .calendar-table .calendar-date {
                   font-size: 12px;
                   line-height: 1.5;
                   letter-spacing: -0.25px;
@@ -1113,15 +1114,9 @@ img {
                   line-height: 1.4;
                   color: #171a19;
                   text-align: center; }
-                  .main-container .overview-box .calendar .viwe-area-container .select-day .calendar-date .calendar-table .calendar-date > span {
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 24px;
-                    height: 24px; }
-                  .main-container .overview-box .calendar .viwe-area-container .select-day .calendar-date .calendar-table .calendar-date.extend span {
+                  .main-container .overview-box .calendar .viwe-area-container .select-day .calendar-table-container .calendar-table .calendar-date.extend {
                     background-color: #f5dcea; }
-                  .main-container .overview-box .calendar .viwe-area-container .select-day .calendar-date .calendar-table .calendar-date.holiday span {
+                  .main-container .overview-box .calendar .viwe-area-container .select-day .calendar-table-container .calendar-table .calendar-date.holiday {
                     background-color: #171a19;
                     color: #fff; }
         .main-container .overview-box .calendar .legend-area {
@@ -1194,6 +1189,8 @@ img {
               font-weight: 400;
               color: #727573;
               margin-top: 8px; }
+          .main-container .event-banner-list .shop-content .shop-list > a:hover {
+            opacity: 0.7; }
     .main-container .event-banner-list .more {
       position: absolute;
       top: -56px;
